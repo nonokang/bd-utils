@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.bd</groupId>
+    <artifactId>wpk-manage</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  
+  <artifactId>bd-hive</artifactId>
+  <name>bd-hive</name>
+  <url>http://maven.apache.org</url>
+  
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    <!-- <dependency>
+	    <groupId>org.apache.hive.hcatalog</groupId>
+	    <artifactId>hive-hcatalog-core</artifactId>
+	    <version>1.1.0</version>
+	</dependency> -->
+	<!-- <dependency>
+		<groupId>org.apache.hive</groupId>
+		<artifactId>hive-service</artifactId>
+		<version>1.1.0</version>
+	</dependency>
+	<dependency>
+		<groupId>org.apache.hive</groupId>
+		<artifactId>hive-metastore</artifactId>
+		<version>1.1.0</version>
+	</dependency> -->
+	<dependency>
+	    <groupId>org.apache.hive</groupId>
+   		    <artifactId>hive-jdbc</artifactId>
+   		    <version>1.1.0</version>
+	</dependency>
+	<dependency>
+	    <groupId>org.apache.hadoop</groupId>
+	    <artifactId>hadoop-common</artifactId>
+	    <version>2.6.0</version>
+	</dependency>
+	<!-- 数据库连接池  依赖-->
+	<dependency>
+		<groupId>com.alibaba</groupId>
+		<artifactId>druid</artifactId>
+		<version>1.0.20</version>
+	</dependency>
+	<dependency>  
+	    <groupId>jdk.tools</groupId>  
+	    <artifactId>jdk.tools</artifactId>  
+	    <version>1.7</version>  
+	    <scope>system</scope>  
+	    <systemPath>${JAVA_HOME}/lib/tools.jar</systemPath>  
+	</dependency>
+  </dependencies>
+  
+  <build>
+	<plugins>
+		<plugin>
+			<artifactId>maven-compiler-plugin</artifactId>
+			<version>2.3.2</version>
+			<configuration>
+				<source>1.8</source>
+				<target>1.8</target>
+			</configuration>
+		</plugin>
+		<plugin>
+			<artifactId> maven-assembly-plugin </artifactId>
+			<configuration>
+				<descriptorRefs>
+					<descriptorRef>jar-with-dependencies</descriptorRef>
+				</descriptorRefs>
+			</configuration>
+			<executions>
+				<execution>
+					<id>make-assembly</id>
+					<phase>package</phase>
+					<goals>
+						<goal>single</goal>
+					</goals>
+				</execution>
+			</executions>
+		</plugin>
+	</plugins>
+  </build>
+</project>
