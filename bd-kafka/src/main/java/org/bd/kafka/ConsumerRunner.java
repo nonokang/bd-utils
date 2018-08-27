@@ -7,7 +7,7 @@ import org.apache.kafka.clients.consumer.ConsumerRecords;
 import org.apache.kafka.common.errors.WakeupException;
 
 /**
- * <b>版权信息:</b> 广州智数信息科技有限公司<br>
+ * <b>版权信息:</b> big data module<br>
  * <b>功能描述:</b> 消费者线程<br>
  * <b>版本历史:</b>
  * @author  wpk | 2017年11月26日 下午3:18:25 |创建

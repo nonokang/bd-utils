@@ -21,7 +21,7 @@ import org.slf4j.LoggerFactory;
 import com.github.pagehelper.Page;
 
 /**
- * <b>版权信息:</b> 广州智数信息科技有限公司<br>
+ * <b>版权信息:</b> big data module<br>
  * <b>功能描述:</b> 全文搜索帮助类，查询（查询语句构造），更新，重建索引<br>
  * <b>版本历史:</b>
  * @author  wpk | 2017年12月25日 上午10:48:01 |创建

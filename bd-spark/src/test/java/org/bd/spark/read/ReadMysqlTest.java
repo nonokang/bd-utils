@@ -9,7 +9,7 @@ import org.bd.spark.SessionDrive;
 import org.bd.spark.enums.DbmsType;
 
 /**
- * <b>版权信息:</b> 广州智数信息科技有限公司<br>
+ * <b>版权信息:</b> big data module<br>
  * <b>功能描述:</b> 从mysql上读取数据<br>
  * <b>版本历史:</b>
  * @author  wpk | 2018年1月16日 上午11:27:10 |创建

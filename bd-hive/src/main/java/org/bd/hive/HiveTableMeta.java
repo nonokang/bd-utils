@@ -3,7 +3,7 @@ package org.bd.hive;
 import java.util.List;
 
 /**
- * <b>版权信息:</b> 广州智数信息科技有限公司<br>
+ * <b>版权信息:</b> big data module<br>
  * <b>功能描述:</b> hive表信息对象类<br>
  * <b>版本历史:</b>
  * @author  wpk | 2017年10月31日 上午10:12:37 |创建
@@ -121,7 +121,7 @@ public class HiveTableMeta {
     }
 
 	/**
-     * <b>版权信息:</b> 广州智数信息科技有限公司<br>
+     * <b>版权信息:</b> big data module<br>
      * <b>功能描述:</b> hive表的列信息对象类<br>
      * <b>版本历史:</b>
      * @author  wpk | 2017年10月31日 上午10:13:44 |创建

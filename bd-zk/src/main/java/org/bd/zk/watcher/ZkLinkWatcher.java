@@ -5,7 +5,7 @@ import org.apache.zookeeper.Watcher;
 import org.apache.zookeeper.Watcher.Event.KeeperState;
 
 /**
- * <b>版权信息:</b> 广州智数信息科技有限公司<br>
+ * <b>版权信息:</b> big data module<br>
  * <b>功能描述:</b> zookeeper连接同步观察<br>
  * <b>版本历史:</b>
  * @author  wpk | 2017年12月3日 上午10:54:59 |创建

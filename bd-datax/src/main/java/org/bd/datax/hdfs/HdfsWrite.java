@@ -5,7 +5,7 @@ import java.util.List;
 import org.bd.datax.bean.Write;
 
 /**
- * <b>版权信息:</b> 广州智数信息科技有限公司<br>
+ * <b>版权信息:</b> big data module<br>
  * <b>功能描述:</b> mysql写入配置<br>
  * <b>版本历史:</b>
  * @author  wpk | 2017年9月20日 下午9:29:52 |创建

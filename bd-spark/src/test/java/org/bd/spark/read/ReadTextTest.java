@@ -7,7 +7,7 @@ import org.bd.spark.ReadComm;
 import org.bd.spark.enums.FormatType;
 
 /**
- * <b>版权信息:</b> 广州智数信息科技有限公司<br>
+ * <b>版权信息:</b> big data module<br>
  * <b>功能描述:</b> 从test读取数据<br>
  * <b>版本历史:</b>
  * @author  wpk | 2018年1月16日 上午11:24:28 |创建

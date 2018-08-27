@@ -3,7 +3,7 @@ package org.bd.kylin.request;
 import java.io.Serializable;
 
 /**
- * <b>版权信息:</b> 广州智数信息科技有限公司<br>
+ * <b>版权信息:</b> big data module<br>
  * <b>功能描述:</b> 查询语句请求参数<br>
  * <b>版本历史:</b>
  * @author  wpk | 2017年11月20日 下午9:54:14 |创建

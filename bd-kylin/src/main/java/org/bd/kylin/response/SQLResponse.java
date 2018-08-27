@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.util.List;
 
 /**
- * <b>版权信息:</b> 广州智数信息科技有限公司<br>
+ * <b>版权信息:</b> big data module<br>
  * <b>功能描述:</b> 查询sql返回的信息<br>
  * <b>版本历史:</b>
  * @author  wpk | 2017年11月21日 下午5:03:27 |创建

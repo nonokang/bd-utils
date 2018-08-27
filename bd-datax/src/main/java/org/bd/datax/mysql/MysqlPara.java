@@ -3,7 +3,7 @@ package org.bd.datax.mysql;
 import org.bd.datax.DataxPara;
 
 /**
- * <b>版权信息:</b> 广州智数信息科技有限公司<br>
+ * <b>版权信息:</b> big data module<br>
  * <b>功能描述:</b> mysql键值对参数配置<br>
  * <b>版本历史:</b>
  * @author  wpk | 2017年8月8日 下午3:12:28 |创建

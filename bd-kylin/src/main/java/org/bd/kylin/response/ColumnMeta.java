@@ -3,7 +3,7 @@ package org.bd.kylin.response;
 import java.io.Serializable;
 
 /**
- * <b>版权信息:</b> 广州智数信息科技有限公司<br>
+ * <b>版权信息:</b> big data module<br>
  * <b>功能描述:</b> 元数据（列）对象类<br>
  * <b>版本历史:</b>
  * @author  wpk | 2017年11月21日 下午2:13:08 |创建

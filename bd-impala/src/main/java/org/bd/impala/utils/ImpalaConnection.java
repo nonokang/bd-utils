@@ -9,7 +9,7 @@ import com.alibaba.druid.pool.DruidDataSource;
 
 
 /**
- * <b>版权信息:</b> 广州智数信息科技有限公司<br>
+ * <b>版权信息:</b> big data module<br>
  * <b>功能描述:</b> 该类主要作用在于获取IMPALA的连接<br>
  * <b>版本历史:</b>
  * @author  wpk | 2017年8月23日 上午11:19:08 |创建

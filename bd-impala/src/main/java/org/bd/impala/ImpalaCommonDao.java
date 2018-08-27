@@ -16,7 +16,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * <b>版权信息:</b> 2017,广州智数信息科技有限公司<br/>
+ * <b>版权信息:</b> 2017,big data module<br/>
  * <b>功能描述:</b> Impala的基本操作<br/>
  * <b>版本历史:</b><br/>
  * @author  jasse | 2017年3月7日|创建

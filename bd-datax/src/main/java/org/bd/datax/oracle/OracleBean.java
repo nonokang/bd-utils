@@ -15,7 +15,7 @@ import org.bd.datax.oracle.OracleWrite.WriteParameter;
 import org.bd.datax.oracle.OracleWrite.WriteParameter.WriteConnection;
 
 /**
- * <b>版权信息:</b> 广州智数信息科技有限公司<br>
+ * <b>版权信息:</b> big data module<br>
  * <b>功能描述:</b> oracle脚本转换类<br>
  * <b>版本历史:</b>
  * @author  wpk | 2017年10月13日 下午4:20:47 |创建

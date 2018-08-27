@@ -3,7 +3,7 @@ package org.bd.hive.udf;
 import org.apache.hadoop.hive.ql.exec.UDF;
 
 /**
- * <b>版权信息:</b> 广州智数信息科技有限公司<br>
+ * <b>版权信息:</b> big data module<br>
  * <b>功能描述:</b> 字符串转小写类<br>
  * <b>版本历史:</b>
  * @author  wpk | 2017年9月4日 下午9:04:19 |创建

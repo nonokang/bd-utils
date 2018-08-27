@@ -15,7 +15,7 @@ import org.bd.datax.ftp.FtpRead.Parameter.ColumnValue;
 import org.bd.datax.ftp.FtpWrite.WriteParameter;
 
 /**
- * <b>版权信息:</b> 广州智数信息科技有限公司<br>
+ * <b>版权信息:</b> big data module<br>
  * <b>功能描述:</b> ftp脚本转换类<br>
  * <b>版本历史:</b>
  * @author  wpk | 2017年10月13日 下午9:40:31 |创建

@@ -3,7 +3,7 @@ package org.bd.kylin.rest;
 import org.bd.kylin.RestRequstHandle;
 
 /**
- * <b>版权信息:</b> 广州智数信息科技有限公司<br>
+ * <b>版权信息:</b> big data module<br>
  * <b>功能描述:</b> kylin项目接口<br>
  * <b>版本历史:</b>
  * @author  wpk | 2017年11月21日 下午2:37:07 |创建

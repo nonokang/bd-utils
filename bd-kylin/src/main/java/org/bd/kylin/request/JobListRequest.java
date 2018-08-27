@@ -3,7 +3,7 @@ package org.bd.kylin.request;
 import java.util.List;
 
 /**
- * <b>版权信息:</b> 广州智数信息科技有限公司<br>
+ * <b>版权信息:</b> big data module<br>
  * <b>功能描述:</b> job请求参数对象<br>
  * <b>版本历史:</b>
  * @author  wpk | 2017年11月21日 上午10:16:39 |创建
