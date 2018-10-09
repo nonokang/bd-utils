@@ -51,9 +51,13 @@
 		<plugin>
 			<artifactId> maven-assembly-plugin </artifactId>
 			<configuration>
-				<descriptorRefs>
+				<appendAssemblyId>false</appendAssemblyId>
+                <descriptors>
+                    <descriptor>src/main/resources/package.xml</descriptor>
+                </descriptors>
+				<!-- <descriptorRefs>
 					<descriptorRef>jar-with-dependencies</descriptorRef>
-				</descriptorRefs>
+				</descriptorRefs> -->
 			</configuration>
 			<executions>
 				<execution>

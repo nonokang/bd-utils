@@ -14,19 +14,20 @@ public class Test {
 		}else{
 			System.out.println("路径不存在");
 		}*/
-		/*boolean falg2 = item.mkDir("/user/udf_prog/output/test1/test2");
+		/*boolean falg2 = item.mkDir("/backup");
 		if(falg2){
 			System.out.println("创建成功");
 		}else{
 			System.out.println("创建失败");
 		}*/
-		/*boolean flag3 = item.deleteDir("/user/udf_prog/output/testFold/");
+		item.uploadFile("C:\\Users\\ennwpae\\Desktop\\jupyter1.html", "/backup");
+		/*boolean flag3 = item.deleteDir("/backup");
 		if(flag3){
 			System.out.println("删除成功");
 		}else{
 			System.out.println("删除失败");
 		}*/
-		/*FileStatus[] list = item.dirList("/user/udf_prog");
+		/*FileStatus[] list = item.dirList("/backup");
         for (FileStatus f : list) {
             System.out.printf("name: %s, folder: %s, size: %d, %s, %s, %d\n", f.getPath(), f.isDirectory(), f.getLen(), f.getGroup(), f.getOwner(), f.getBlockSize());
         }*/
@@ -37,7 +38,7 @@ public class Test {
         	System.out.println("重命名失败");
         }*/
 //        item.uploadFile("C:\\Users\\Administrator\\Desktop/idata.sql", "/user/udf_prog/output/test1");
-        item.downloadFile("C:\\Users\\Administrator\\Desktop\\ceshi", "/user/udf_prog/output/test1/test.sql");
+//        item.downloadFile("C:\\Users\\Administrator\\Desktop\\ceshi", "/user/udf_prog/output/test1/test.sql");
 //		item.createFile("/user/udf_prog/output/test1/test.txt", "fsadfsadfsadfsadf");
 		/*boolean flag3 = item.deleteDir("/user/udf_prog/output/test1/test.txt");
 		if(flag3){

@@ -120,6 +120,18 @@ public class HdfsClient {
         return status;
     }
     
+    public FileStatus getFileStatus(String file){
+        Path path = new Path(file);
+        FileStatus status = null;
+        try {
+            status = fileSystem.getFileStatus(path);
+        } catch (IOException e) {
+            String msg = String.format("获取目录[%s]文件列表时发生网络IO异常,请检查您的网络是否正常！", file);
+            throw new HdfsClientException(msg, e);
+        }
+        return status;
+    }
+    
     /**
      * <b>描述：</b> 创建文件夹（注意：可以创建多层文件夹）
      * @author wpk | 2017年11月15日 下午2:36:44 |创建

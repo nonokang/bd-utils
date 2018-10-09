@@ -20,5 +20,7 @@
     <module>bd-zk</module>
     <module>wpk-action</module>
     <module>bd-solr</module>
+    <module>bd-yarn</module>
+    <module>bd-elasticsearch</module>
   </modules>
 </project>
