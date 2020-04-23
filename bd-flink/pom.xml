@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+        <artifactId>wpk-manage</artifactId>
+        <groupId>com.bd</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+
+  <groupId>com.bd</groupId>
+  <artifactId>bd-flink</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+
+  <name>bd-flink</name>
+  <!-- FIXME change it to the project's website -->
+  <url>http://www.example.com</url>
+
+  <properties>
+	<java.version>1.8</java.version>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.7</maven.compiler.source>
+    <maven.compiler.target>1.7</maven.compiler.target>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.11</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+	  <groupId>org.apache.flink</groupId>
+	  <artifactId>flink-java</artifactId>
+	  <version>1.7.2</version>
+	  <scope>provided</scope>
+	</dependency>
+	<dependency>
+	  <groupId>org.apache.flink</groupId>
+	  <artifactId>flink-streaming-java_2.11</artifactId>
+	  <version>1.7.2</version>
+	  <scope>provided</scope>
+	</dependency>
+    <dependency>
+	  <groupId>org.apache.flink</groupId>
+	  <artifactId>flink-connector-kafka_2.11</artifactId>
+	  <version>1.7.2</version>
+	</dependency>
+
+    <dependency>
+      <groupId>org.apache.flink</groupId>
+      <artifactId>flink-connector-elasticsearch6_2.11</artifactId>
+      <version>1.7.2</version>
+	</dependency>
+	
+	<dependency>
+	  <groupId>org.apache.flink</groupId>
+	  <artifactId>flink-cep_2.11</artifactId>
+	  <version>1.7.2</version>
+	</dependency>
+	
+
+    <dependency>
+        <groupId>org.projectlombok</groupId>
+        <artifactId>lombok</artifactId>
+        <version>1.18.6</version>
+        <scope>provided</scope>
+    </dependency>
+	
+	<dependency>
+		<groupId>org.slf4j</groupId>
+		<artifactId>slf4j-log4j12</artifactId>
+		<version>1.7.7</version>
+		<scope>runtime</scope>
+	</dependency>
+	<dependency>
+		<groupId>log4j</groupId>
+		<artifactId>log4j</artifactId>
+		<version>1.2.17</version>
+		<scope>runtime</scope>
+	</dependency>
+	
+	<dependency>
+        <groupId>net.sf.json-lib</groupId>
+        <artifactId>json-lib</artifactId>
+        <version>2.4</version>
+        <classifier>jdk15</classifier>
+	</dependency>
+  </dependencies>
+
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+
+		<!-- Java Compiler -->
+		<plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-compiler-plugin</artifactId>
+			<version>3.1</version>
+			<configuration>
+				<source>${java.version}</source>
+				<target>${java.version}</target>
+			</configuration>
+		</plugin>
+        <plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-shade-plugin</artifactId>
+			<version>3.0.0</version>
+			<executions>
+				<execution>
+					<phase>package</phase>
+					<goals>
+						<goal>shade</goal>
+					</goals>
+					<configuration>
+						<artifactSet>
+							<excludes>
+								<exclude>com.google.code.findbugs:jsr305</exclude>
+								<exclude>org.slf4j:*</exclude>
+								<exclude>log4j:*</exclude>
+							</excludes>
+						</artifactSet>
+						<filters>
+							<filter>
+								<!-- Do not copy the signatures in the META-INF folder.
+								Otherwise, this might cause SecurityExceptions when using the JAR. -->
+								<artifact>*:*</artifact>
+								<excludes>
+									<exclude>META-INF/*.SF</exclude>
+									<exclude>META-INF/*.DSA</exclude>
+									<exclude>META-INF/*.RSA</exclude>
+								</excludes>
+							</filter>
+						</filters>
+						<transformers>
+							<transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+								<mainClass>my.programs.main.clazz</mainClass>
+							</transformer>
+						</transformers>
+					</configuration>
+				</execution>
+			</executions>
+		</plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+</project>

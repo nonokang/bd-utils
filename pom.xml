@@ -6,21 +6,20 @@
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
   <modules>
+    <module>bd-datax</module>
+    <module>bd-elasticsearch</module>
+    <module>bd-flink</module>
   	<module>bd-hbase</module>
+    <module>bd-hdfs</module>
   	<module>bd-hive</module>
-  	<module>bd-spark</module>
   	<module>bd-hive-udf</module>
-  	<module>bd-mapreduce</module>
   	<module>bd-impala</module>
     <module>bd-kafka</module>
-    <module>bd-hdfs</module>
-    <module>wpk-datax</module>
-    <module>bd-datax</module>
     <module>bd-kylin</module>
-    <module>bd-zk</module>
-    <module>wpk-action</module>
+  	<module>bd-mapreduce</module>
     <module>bd-solr</module>
+  	<module>bd-spark</module>
     <module>bd-yarn</module>
-    <module>bd-elasticsearch</module>
+    <module>bd-zk</module>
   </modules>
 </project>
