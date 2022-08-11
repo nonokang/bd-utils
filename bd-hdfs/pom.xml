@@ -27,7 +27,7 @@
     <dependency>  
          <groupId>org.apache.hadoop</groupId>  
          <artifactId>hadoop-common</artifactId>  
-         <version>3.1.1</version>    
+         <version>3.2.4</version>    
          <!--<version>2.7.3</version>    java.lang.NoClassDefFoundError: org/apache/hadoop/util/FastNumberFormat-->
 <!--          <version>2.6.0</version>   -->
     </dependency>
